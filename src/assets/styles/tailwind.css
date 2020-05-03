@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition-full {
+  @apply transition ease-in-out duration-300;
+}
+
+h1 { @apply text-6xl font-bold m-0; }
+h2 { @apply text-5xl font-bold m-0; }
+h3 { @apply text-4xl font-bold m-0; }
+h4 { @apply text-3xl font-bold m-0; }
+h5 { @apply text-2xl font-bold m-0; }
+h6 { @apply text-xl font-bold m-0; }
+p { @apply text-base m-0; }
+b { @apply text-base font-bold m-0; }
+sub { @apply text-sm text-gray-500 m-0; }
+/* 
+.text-xs	font-size: .75rem;
+.text-sm	font-size: .875rem;
+.text-base	font-size: 1rem;
+.text-lg	font-size: 1.125rem;
+.text-xl	font-size: 1.25rem;
+.text-2xl	font-size: 1.5rem;
+.text-3xl	font-size: 1.875rem;
+.text-4xl	font-size: 2.25rem;
+.text-5xl	font-size: 3rem;
+.text-6xl	font-size: 4rem;
+*/
+
+button {
+  @apply rounded p-2;
+}
+
+i {
+  @apply cursor-pointer;
+}
+
+.hover-hidden:hover .hidden {
+  display: block;
+}
+
+.text-inherit {
+  color: inherit;
+}
+
+.card {
+  @apply p-2 rounded bg-white shadow-lg; 
+}
