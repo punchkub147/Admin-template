@@ -36,6 +36,22 @@ i {
   @apply cursor-pointer;
 }
 
+a {
+  @apply text-blue-600
+}
+
+label {
+  @apply font-bold mb-1
+}
+
+input[type=text] {
+  @apply p-2 border-solid border-2 border-gray-200 rounded
+}
+
+input[type=checkbox] {
+  @apply mr-1
+}
+
 .hover-hidden:hover .hidden {
   display: block;
 }

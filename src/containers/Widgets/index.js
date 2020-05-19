@@ -14,33 +14,8 @@ import WidgetStatCombine from "./StatCombine"
 import WidgetTracker from "./Tracker";
 import WidgetOrders from "./Orders";
 import WidgetStatus from './Status';
-
-const WidgetLineChart = props => (
-  <Card>
-    <div className="flex flex-row w-full items-center p-6">
-      <div className="flex justify-center bg-red-500 rounded-full text-white w-12 h-12">
-        <i className="fas fa-user-alt fa-lg self-center" />
-      </div>
-      <div className="ml-4">
-        <h5>45.6k</h5>
-        <p>New Users</p>
-      </div>
-    </div>
-    <Line />
-  </Card>
-);
-
-const WidgetDoughnutChart = props => (
-  <Card>
-    <div className="flex flex-row w-full items-center p-6">
-      <div className="flex flex-col">
-        <h5>100K</h5>
-        <p>Product Sales</p>
-      </div>
-      <Doughnut />
-    </div>
-  </Card>
-);
+import WidgetLineChart from './LineChart'
+import WidgetDoughnutChart from './DoughnutChart'
 
 const Widgets = () => {
   return (

@@ -14398,6 +14398,31 @@ i {
   cursor: pointer;
 }
 
+a {
+  --text-opacity: 1;
+  color: #3182ce;
+  color: rgba(49, 130, 206, var(--text-opacity))
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 0.25rem
+}
+
+input[type=text] {
+  padding: 0.5rem;
+  border-style: solid;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+  border-radius: 0.25rem
+}
+
+input[type=checkbox] {
+  margin-right: 0.25rem
+}
+
 .hover-hidden:hover .hidden {
   display: block;
 }

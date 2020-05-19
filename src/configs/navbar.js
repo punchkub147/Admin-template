@@ -57,17 +57,27 @@ export const NAVBAR_CONFIG = [
   {
     name: "Authen",
     path: ROUTE_PATH.LOGIN,
-    icon: "fa-shopping-bag",
+    icon: "fa-key",
     nested: [
       {
         name: "Login",
         path: ROUTE_PATH.LOGIN,
-        icon: "fa-shopping-bag"
+        icon: "fa-sign-in-alt"
+      },
+      {
+        name: "Register",
+        path: ROUTE_PATH.REGISTER,
+        icon: "fa-paste"
+      },
+      {
+        name: "ForgotPassword",
+        path: ROUTE_PATH.FORGOT_PASSWORD,
+        icon: "fa-envelope-open-text"
       },
       {
         name: "Logout",
         path: ROUTE_PATH.LOGOUT,
-        icon: "fa-shopping-bag"
+        icon: "fa-sign-out-alt"
       }
     ]
   }

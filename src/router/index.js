@@ -7,6 +7,8 @@ import Home from "../containers/Home";
 import Dashboard from "../containers/Dashboard";
 import Widgets from "../containers/Widgets";
 import Login from "../containers/Authen/Login";
+import Register from "../containers/Authen/Register";
+import ForgotPassword from "../containers/Authen/ForgotPassword";
 import Logout from "../containers/Authen/Logout";
 // import AccessControl from "../hoc/AccessControl";
 import { ROUTE_PATH } from "../configs/router";
@@ -41,6 +43,8 @@ const AppRouter = () => {
         />
 
         <Route path={ROUTE_PATH.LOGIN} component={Login} />
+        <Route path={ROUTE_PATH.REGISTER} component={Register} />
+        <Route path={ROUTE_PATH.FORGOT_PASSWORD} component={ForgotPassword} />
         <Route path={ROUTE_PATH.LOGOUT} component={Logout} />
       </Switch>
     </Router>

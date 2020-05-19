@@ -13,6 +13,9 @@ export const ROUTE_PATH = {
 
   // AUTHEN
   LOGIN: "/login",
+  REGISTER: "/register",
+  FORGOT_PASSWORD: "/forgotPassword",
+  RESET_PASSWORD: "/resetPassword",
   LOGOUT: "/logout"
 };
 
