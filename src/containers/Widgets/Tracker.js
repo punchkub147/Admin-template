@@ -20,7 +20,7 @@ const WidgetTracker = ({ options = [] }) => {
         <div className="flex w-full">
           <div className="text-center p-6">
             <h3>163</h3>
-            <sub>Ticketes</sub>
+            <p>Ticketes</p>
           </div>
           <div className="w-full">
             <Doughnut />

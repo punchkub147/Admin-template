@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { useTranslation } from "react-i18next";
 import Navbar from "../Navbar";
 import Header from "../Header";
+import Breadcrumb from "../Breadbrumb";
 import Logo from "../../assets/images/logo.png";
 
 const enhance = compose(connect(state => ({ darkMode: state.darkMode })));
@@ -24,6 +25,7 @@ const Footer = () => {
 
 const AppLayout = ({ children, darkMode }) => {
   const { i18n } = useTranslation();
+  const { pathname } = window.location;
   return (
     <div className="bg-indigo-100 min-h-screen overflow-scroll">
       {/* HEAD */}
@@ -34,7 +36,8 @@ const AppLayout = ({ children, darkMode }) => {
         <div className="flex w-full flex-col">
           <Header />
           <div className="pt-16 pl-16">
-            <div className="p-4 md:p-6 lg:p-8 w-full min-h-screen">
+            <Breadcrumb/>
+            <div className="p-4 md:p-6 lg:p-8 pt-0 md:pt-0 lg:pt-0 w-full min-h-screen">
               {children}
             </div>
             <div className="px-4 md:px-6 lg:px-8 w-full">

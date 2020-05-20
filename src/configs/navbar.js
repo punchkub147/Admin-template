@@ -51,6 +51,16 @@ export const NAVBAR_CONFIG = [
         name: "Table",
         path: ROUTE_PATH.COMPONENT_TABLE,
         icon: "fa-table"
+      },
+      {
+        name: "Buttons",
+        path: ROUTE_PATH.COMPONENT_BUTTON,
+        icon: "fa-arrow-right"
+      },
+      {
+        name: "Breadcrumbs",
+        path: ROUTE_PATH.COMPONENT_BREADCRUMB,
+        icon: "fa-arrow-right"
       }
     ]
   },

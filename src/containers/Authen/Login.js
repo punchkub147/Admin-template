@@ -7,7 +7,7 @@ const Login = (props) => {
   return (
     <div className="flex bg-indigo-200 h-screen justify-center items-center">
       <div className="w-1/2">
-        <div className="card">
+        <card>
           <div className="flex flex-row">
             <div className="w-3/4 p-8">
               <h4 className="text-center">Welcome</h4>
@@ -40,7 +40,7 @@ const Login = (props) => {
               </div>
               <br/>
               <Link to={ROUTE_PATH.DASHBOARD}>
-                <button className="p-2 w-full bg-indigo-400 text-white">Login</button>
+                <button className="w-full primary">Login</button>
               </Link>
               <br/>
               <br/>
@@ -54,7 +54,7 @@ const Login = (props) => {
               <img src={ImgLogin} alt="" classsName="rounded"/>
             </div>
           </div>
-        </div>
+        </card>
       </div>
     </div>
   );

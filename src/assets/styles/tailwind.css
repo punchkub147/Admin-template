@@ -1,20 +1,26 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 .transition-full {
   @apply transition ease-in-out duration-300;
 }
 
-h1 { @apply text-6xl font-bold m-0; }
-h2 { @apply text-5xl font-bold m-0; }
-h3 { @apply text-4xl font-bold m-0; }
-h4 { @apply text-3xl font-bold m-0; }
-h5 { @apply text-2xl font-bold m-0; }
-h6 { @apply text-xl font-bold m-0; }
-p { @apply text-base m-0; }
-b { @apply text-base font-bold m-0; }
-sub { @apply text-sm text-gray-500 m-0; }
+body {
+  @apply text-gray-700;
+}
+h1, h2, h3, h4, h5, h6, p, b, sub {
+  @apply m-0;
+}
+h1, h2, h3, h4, h5, h6, b { @apply font-bold; }
+h1 { @apply text-6xl; }
+h2 { @apply text-5xl; }
+h3 { @apply text-4xl; }
+h4 { @apply text-3xl; }
+h5 { @apply text-2xl; }
+h6 { @apply text-xl; }
+p { @apply text-base; }
+b { @apply text-base; }
+sub { @apply text-sm text-gray-500; }
 /* 
 .text-xs	font-size: .75rem;
 .text-sm	font-size: .875rem;
@@ -27,9 +33,25 @@ sub { @apply text-sm text-gray-500 m-0; }
 .text-5xl	font-size: 3rem;
 .text-6xl	font-size: 4rem;
 */
+.primary { @apply bg-indigo-500; }
+.secondary { @apply bg-gray-500; }
+.success { @apply bg-green-500; }
+.info { @apply bg-blue-500; }
+.warning { @apply bg-orange-400; }
+.danger { @apply bg-red-500; }
+.outline.primary { @apply border-2 border-indigo-500 border-solid bg-transparent text-indigo-500; }
+.outline.secondary { @apply border-2 border-gray-500 border-solid bg-transparent text-gray-500; }
+.outline.success { @apply border-2 border-green-500 border-solid bg-transparent text-green-500; }
+.outline.info { @apply border-2 border-blue-500 border-solid bg-transparent text-blue-500; }
+.outline.warning { @apply border-2 border-orange-400 border-solid bg-transparent text-orange-400; }
+.outline.danger { @apply border-2 border-red-500 border-solid bg-transparent text-red-500; }
+
 
 button {
-  @apply rounded p-2;
+  @apply rounded px-4 py-2 text-white;
+}
+button:active {
+  @apply opacity-75;
 }
 
 i {
@@ -38,6 +60,10 @@ i {
 
 a {
   @apply text-blue-600
+}
+
+mark {
+  @apply p-2 bg-gray-200 text-indigo-600;
 }
 
 label {
@@ -61,5 +87,29 @@ input[type=checkbox] {
 }
 
 .card {
-  @apply p-2 rounded bg-white shadow-lg; 
+  @apply rounded bg-white shadow-lg; 
 }
+
+card {
+  @apply block p-2 rounded bg-white shadow-lg; 
+}
+
+.breadcrumb > ol {
+  @apply flex flex-row p-2;
+}
+.breadcrumb > ol > li {
+  @apply text-indigo-500 mr-4;
+}
+.breadcrumb > ol > li > a {
+  @apply text-gray-700;
+}
+.breadcrumb li+li:before {
+  /* font-family: "Font Awesome 5 Free";
+  content: "\f105"; */
+  content: "\ecee";
+  font-family: boxicons;
+  @apply mr-4 relative text-gray-700;
+  top: 2px;
+}
+
+@tailwind utilities;

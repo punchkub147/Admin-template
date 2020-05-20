@@ -9,7 +9,7 @@ const WidgetStatCombine = ({options = []}) => <Card>
   <div className="col-span-6 flex flex-col align-left items-start justify-between">
     <div>
       <h3>2.7K</h3>
-      <sub>Avg Sessions</sub>
+      <p>Avg Sessions</p>
       <p className="mb-4"><span className="text-green-500">+5.2</span> vs Last 7 Days</p>
     </div>
     <button className="w-full bg-indigo-500 text-white p-2">View Details >></button>

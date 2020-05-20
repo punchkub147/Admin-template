@@ -16,6 +16,8 @@ import Ecommerce from "../containers/Applications/Ecommerce";
 import Logistic from "../containers/Applications/Logistic";
 
 import ComponentTable from "../containers/Components/Table";
+import ComponentButton from "../containers/Components/Button";
+import ComponentBreadcrumb from "../containers/Components/Breadcrumb";
 
 const RouteLayout = nest(
   Layout,
@@ -37,10 +39,9 @@ const AppRouter = () => {
         <RouteLayout path={ROUTE_PATH.LOGISTIC} component={Logistic} />
 
         {/* COMPONENT */}
-        <RouteLayout
-          path={ROUTE_PATH.COMPONENT_TABLE}
-          component={ComponentTable}
-        />
+        <RouteLayout path={ROUTE_PATH.COMPONENT_TABLE} component={ComponentTable} />
+        <RouteLayout path={ROUTE_PATH.COMPONENT_BUTTON} component={ComponentButton} />
+        <RouteLayout path={ROUTE_PATH.COMPONENT_BREADCRUMB} component={ComponentBreadcrumb} />
 
         <Route path={ROUTE_PATH.LOGIN} component={Login} />
         <Route path={ROUTE_PATH.REGISTER} component={Register} />
