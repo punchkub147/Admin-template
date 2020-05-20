@@ -4,7 +4,7 @@ import Select from "../../../components/Select";
 const ComponentDropDown = (props) => {
   return (
     <React.Fragment>
-      <div className="grid grid-cols-12 gap-8">
+      <grid>
         <card className="col-span-12 p-4">
           <h5>Dropdowns</h5>
           <hr />
@@ -128,7 +128,7 @@ const ComponentDropDown = (props) => {
             <option>danger 3</option>
           </Select>
         </card>
-      </div>
+      </grid>
     </React.Fragment>
   );
 };

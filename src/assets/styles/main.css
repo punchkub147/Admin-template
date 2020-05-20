@@ -652,18 +652,20 @@ b { font-size: 1rem;
 sub { font-size: 0.875rem; --text-opacity: 1; color: #a0aec0; color: rgba(160, 174, 192, var(--text-opacity));
 }
 
-/* 
-.text-xs	font-size: .75rem;
-.text-sm	font-size: .875rem;
-.text-base	font-size: 1rem;
-.text-lg	font-size: 1.125rem;
-.text-xl	font-size: 1.25rem;
-.text-2xl	font-size: 1.5rem;
-.text-3xl	font-size: 1.875rem;
-.text-4xl	font-size: 2.25rem;
-.text-5xl	font-size: 3rem;
-.text-6xl	font-size: 4rem;
-*/
+grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-gap: 1rem; gap: 1rem;
+}
+
+@media (min-width: 640px) { grid { grid-gap: 1.5rem; gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) { grid { grid-gap: 2rem; gap: 2rem;
+  }
+}
+
+@media (min-width: 1280px) { grid { grid-gap: 2rem; gap: 2rem;
+  }
+}
 
 .primary { --bg-opacity: 1; background-color: #667eea; background-color: rgba(102, 126, 234, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }

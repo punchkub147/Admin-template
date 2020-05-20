@@ -1,15 +1,27 @@
 import React from "react";
 
 import TableBasic from "./Basic";
-import TableSortable from "./Sortable";
-import TableExpanable from "./Expanable";
-import TableFixedColumn from "./FixedColumn";
-import TableSelection from "./Selection";
 
-const ComponentTable = props => {
+const ComponentTable = (props) => {
   return (
     <React.Fragment>
-      xxx
+      <grid>
+        <card className="col-span-12 p-4">
+          <h5>Tables</h5>
+          <hr />
+          <br />
+          <h6>Basic</h6>
+          <br />
+
+          <TableBasic />
+        </card>
+        <card className="col-span-12 p-4">
+          <h6>Basic</h6>
+          <br />
+
+          <TableBasic />
+        </card>
+      </grid>
     </React.Fragment>
   );
 };

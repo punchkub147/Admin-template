@@ -3,7 +3,7 @@ import React from "react";
 const ComponentButton = (props) => {
   return (
     <React.Fragment>
-      <div className="grid grid-cols-12 gap-8">
+      <grid>
         <card className="col-span-12 p-4">
           <h5>Basic Buttons</h5>
           <hr />
@@ -80,7 +80,7 @@ const ComponentButton = (props) => {
           <button className="mr-4 px-3 success"><i className="fas fa-check"></i></button>
           <button className="mr-4 px-3 danger"><i className="fas fa-heart"></i></button>
         </card>
-      </div>
+      </grid>
     </React.Fragment>
   );
 };

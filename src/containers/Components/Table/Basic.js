@@ -31,6 +31,11 @@ const columns = [
     title: "Address",
     dataIndex: "address",
     key: "address"
+  },
+  {
+    title: "ACTION",
+    key: "action",
+    render: (text, record) => <i className="fas fa-ellipsis-v ml-5" />
   }
 ];
 

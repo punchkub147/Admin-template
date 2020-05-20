@@ -21,18 +21,12 @@ h6 { @apply text-xl; }
 p { @apply text-base; }
 b { @apply text-base; }
 sub { @apply text-sm text-gray-500; }
-/* 
-.text-xs	font-size: .75rem;
-.text-sm	font-size: .875rem;
-.text-base	font-size: 1rem;
-.text-lg	font-size: 1.125rem;
-.text-xl	font-size: 1.25rem;
-.text-2xl	font-size: 1.5rem;
-.text-3xl	font-size: 1.875rem;
-.text-4xl	font-size: 2.25rem;
-.text-5xl	font-size: 3rem;
-.text-6xl	font-size: 4rem;
-*/
+
+grid { @apply grid grid-cols-12 gap-4; }
+@media (min-width: 640px) { grid { @apply gap-6; } }
+@media (min-width: 1024px) { grid { @apply gap-8; } }
+@media (min-width: 1280px) { grid { @apply gap-8; } }
+
 .primary { @apply bg-indigo-500 text-white; }
 .secondary { @apply bg-gray-500 text-white; }
 .success { @apply bg-green-500 text-white; }

@@ -5,7 +5,7 @@ const Table = ({ columns = [], dataSource = [], hideHeader = false }) => {
     <div className="w-full overflow-scroll pb-4">
       <table className="table-auto w-full">
         {!hideHeader && (
-          <thead className="border-t border-b">
+          <thead className="border-t border-b text-left">
             <tr>
               {columns.map(column => (
                 <th className="text-xs p-4">{column.title}</th>

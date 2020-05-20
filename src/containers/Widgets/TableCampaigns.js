@@ -41,7 +41,7 @@ export default props => {
           {
             title: "ACTION",
             key: "action",
-            render: (text, record) => <i className="fas fa-ellipsis-v ml-8" />
+            render: (text, record) => <i className="fas fa-ellipsis-v ml-5" />
           }
         ]}
         dataSource={Array(5)

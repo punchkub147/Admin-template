@@ -20,7 +20,7 @@ import WidgetDoughnutChart from '../Widgets/DoughnutChart'
 const Dashboard = () => {
   return (
     <React.Fragment>
-      <div className="animated fadeIn grid grid-cols-12 gap-4 md:gap-6 lg:gap-8">
+      <grid className="animated fadeIn">
 
         <div className="col-span-12 md:col-span-6">
           <WidgetStatCombine
@@ -158,7 +158,7 @@ const Dashboard = () => {
             </div>
           </Card>
         </div>
-      </div>
+      </grid>
     </React.Fragment>
   );
 };
