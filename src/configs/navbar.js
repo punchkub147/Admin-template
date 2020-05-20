@@ -61,6 +61,11 @@ export const NAVBAR_CONFIG = [
         name: "Breadcrumbs",
         path: ROUTE_PATH.COMPONENT_BREADCRUMB,
         icon: "fa-arrow-right"
+      },
+      {
+        name: "Dropdowns",
+        path: ROUTE_PATH.COMPONENT_DROPDOWN,
+        icon: "fa-arrow-right"
       }
     ]
   },

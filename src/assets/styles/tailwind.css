@@ -33,12 +33,12 @@ sub { @apply text-sm text-gray-500; }
 .text-5xl	font-size: 3rem;
 .text-6xl	font-size: 4rem;
 */
-.primary { @apply bg-indigo-500; }
-.secondary { @apply bg-gray-500; }
-.success { @apply bg-green-500; }
-.info { @apply bg-blue-500; }
-.warning { @apply bg-orange-400; }
-.danger { @apply bg-red-500; }
+.primary { @apply bg-indigo-500 text-white; }
+.secondary { @apply bg-gray-500 text-white; }
+.success { @apply bg-green-500 text-white; }
+.info { @apply bg-blue-500 text-white; }
+.warning { @apply bg-orange-400 text-white; }
+.danger { @apply bg-red-500 text-white; }
 .outline.primary { @apply border-2 border-indigo-500 border-solid bg-transparent text-indigo-500; }
 .outline.secondary { @apply border-2 border-gray-500 border-solid bg-transparent text-gray-500; }
 .outline.success { @apply border-2 border-green-500 border-solid bg-transparent text-green-500; }
@@ -110,6 +110,18 @@ card {
   font-family: boxicons;
   @apply mr-4 relative text-gray-700;
   top: 2px;
+}
+
+select {
+  @apply block appearance-none w-full rounded leading-tight py-2 pl-2 pr-8 bg-transparent
+}
+select:focus {
+  @apply outline-none border-gray-200;
+}
+.select-arrow:before {
+  @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-2xl;
+  content: "\ea17";
+  font-family: boxicons;
 }
 
 @tailwind utilities;

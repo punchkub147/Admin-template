@@ -665,22 +665,22 @@ sub { font-size: 0.875rem; --text-opacity: 1; color: #a0aec0; color: rgba(160, 1
 .text-6xl	font-size: 4rem;
 */
 
-.primary { --bg-opacity: 1; background-color: #667eea; background-color: rgba(102, 126, 234, var(--bg-opacity));
+.primary { --bg-opacity: 1; background-color: #667eea; background-color: rgba(102, 126, 234, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.secondary { --bg-opacity: 1; background-color: #a0aec0; background-color: rgba(160, 174, 192, var(--bg-opacity));
+.secondary { --bg-opacity: 1; background-color: #a0aec0; background-color: rgba(160, 174, 192, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.success { --bg-opacity: 1; background-color: #48bb78; background-color: rgba(72, 187, 120, var(--bg-opacity));
+.success { --bg-opacity: 1; background-color: #48bb78; background-color: rgba(72, 187, 120, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.info { --bg-opacity: 1; background-color: #4299e1; background-color: rgba(66, 153, 225, var(--bg-opacity));
+.info { --bg-opacity: 1; background-color: #4299e1; background-color: rgba(66, 153, 225, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.warning { --bg-opacity: 1; background-color: #f6ad55; background-color: rgba(246, 173, 85, var(--bg-opacity));
+.warning { --bg-opacity: 1; background-color: #f6ad55; background-color: rgba(246, 173, 85, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.danger { --bg-opacity: 1; background-color: #f56565; background-color: rgba(245, 101, 101, var(--bg-opacity));
+.danger { --bg-opacity: 1; background-color: #f56565; background-color: rgba(245, 101, 101, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 .outline.primary { border-width: 2px; --border-opacity: 1; border-color: #667eea; border-color: rgba(102, 126, 234, var(--border-opacity)); border-style: solid; background-color: transparent; --text-opacity: 1; color: #667eea; color: rgba(102, 126, 234, var(--text-opacity));
@@ -811,6 +811,43 @@ card {
   color: #4a5568;
   color: rgba(74, 85, 104, var(--text-opacity));
   top: 2px;
+}
+
+select {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  line-height: 1.25;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+  background-color: transparent
+}
+
+select:focus {
+  outline: 0;
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+}
+
+.select-arrow:before {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+  content: "\ea17";
+  font-family: boxicons;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

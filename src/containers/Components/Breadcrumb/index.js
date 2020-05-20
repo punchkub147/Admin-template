@@ -6,7 +6,7 @@ const ComponentBreadcrumb = (props) => {
     <React.Fragment>
       <div className="grid grid-cols-12 gap-8">
         <card className="col-span-12 p-4">
-          <h4>Breadcrumbs</h4>
+          <h5>Breadcrumbs</h5>
           <hr />
           <br />
           <h6>Default</h6>
@@ -16,7 +16,7 @@ const ComponentBreadcrumb = (props) => {
               <li><a href="/"><i class="fas fa-home text-indigo-500"></i></a></li>
               <li><a href="#">components</a></li>
               <li><a href="#">breadcrumb</a></li>
-              <li>this page</li>
+              <li>current page</li>
             </ol>
           </nav>
 

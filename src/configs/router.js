@@ -12,6 +12,7 @@ export const ROUTE_PATH = {
   COMPONENT_TABLE: "/component_table",
   COMPONENT_BUTTON: "/component_button",
   COMPONENT_BREADCRUMB: "/component_breadcrumb",
+  COMPONENT_DROPDOWN: "/component_dropdown",
 
   // AUTHEN
   LOGIN: "/login",

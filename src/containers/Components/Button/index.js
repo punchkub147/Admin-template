@@ -5,7 +5,7 @@ const ComponentButton = (props) => {
     <React.Fragment>
       <div className="grid grid-cols-12 gap-8">
         <card className="col-span-12 p-4">
-          <h4>Basic Buttons</h4>
+          <h5>Basic Buttons</h5>
           <hr />
           <br />
           <h6>Default</h6>
@@ -36,7 +36,7 @@ const ComponentButton = (props) => {
           <button className="mr-4 rounded-full danger">Danger</button>
         </card>
         <card className="col-span-12 p-4">
-          <h4>Outline Buttons</h4>
+          <h5>Outline Buttons</h5>
           <hr />
           <br />
           <h6>Default</h6>
@@ -50,7 +50,7 @@ const ComponentButton = (props) => {
           <button className="mr-4 outline danger">Danger</button>
         </card>
         <card className="col-span-12 p-4">
-          <h4>Shadow Buttons</h4>
+          <h5>Shadow Buttons</h5>
           <hr />
           <br />
           <p>Use a class <mark>.hover:shadow-lg</mark> with button classes to create shadow button.</p>
@@ -63,7 +63,7 @@ const ComponentButton = (props) => {
           <button className="mr-4 hover:shadow-lg transition-full danger">Danger</button>
         </card>
         <card className="col-span-12 p-4">
-          <h4>Buttons With Icon</h4>
+          <h5>Buttons With Icon</h5>
           <hr />
           <br />
           <button className="mr-4 outline primary"><i className="fas fa-home mr-2"></i>Home</button>
@@ -72,7 +72,7 @@ const ComponentButton = (props) => {
           <button className="mr-4 rounded-full danger"><i className="fas fa-heart mr-2"></i>Favorite</button>
         </card>
         <card className="col-span-12 p-4">
-          <h4>Icon Only</h4>
+          <h5>Icon Only</h5>
           <hr />
           <br />
           <button className="mr-4 px-3 rounded-full outline primary"><i className="fas fa-home"></i></button>
