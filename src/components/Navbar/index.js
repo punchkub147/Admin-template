@@ -50,7 +50,7 @@ const Navbar = props => {
                           "text-indigo-500 bg-gray-200"}`}
                     >
                       <i className={`fas ${nestnav.icon} mr-2`} />
-                      <span>{nestnav.name}</span>
+                      <span className="whitespace-no-wrap" >{nestnav.name}</span>
                     </div>
                   </Link>
                 ))}

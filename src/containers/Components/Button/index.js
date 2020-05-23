@@ -14,6 +14,7 @@ const ComponentButton = (props) => {
             semantic purpose.
           </p>
           <br />
+          <button className="mr-4">Default</button>
           <button className="mr-4 primary">Primary</button>
           <button className="mr-4 secondary">Secondary</button>
           <button className="mr-4 success">Success</button>

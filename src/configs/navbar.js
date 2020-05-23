@@ -27,24 +27,36 @@ export const NAVBAR_CONFIG = [
   },
   {
     name: "Application",
-    path: ROUTE_PATH.ECOMMERCE,
+    path: ROUTE_PATH.APPLICATION,
     icon: "fa-file",
     nested: [
       {
         name: "Ecommerce",
-        path: ROUTE_PATH.ECOMMERCE,
+        path: ROUTE_PATH.APPLICATION_ECOMMERCE,
         icon: "fa-store-alt"
       },
       {
         name: "Logistic",
-        path: ROUTE_PATH.LOGISTIC,
+        path: ROUTE_PATH.APPLICATION_LOGISTIC,
         icon: "fa-shipping-fast"
       }
     ]
   },
   {
+    name: "Application",
+    path: ROUTE_PATH.FORM_AND_TABLE,
+    icon: "fa-file",
+    nested: [
+      {
+        name: "Inputs",
+        path: ROUTE_PATH.COMPONENT_INPUT,
+        icon: "fa-store-alt"
+      }
+    ]
+  },
+  {
     name: "Components",
-    path: ROUTE_PATH.COMPONENT_TABLE,
+    path: ROUTE_PATH.COMPONENT,
     icon: "fa-toolbox",
     nested: [
       {
@@ -85,7 +97,7 @@ export const NAVBAR_CONFIG = [
         icon: "fa-paste"
       },
       {
-        name: "ForgotPassword",
+        name: "Forgot Password",
         path: ROUTE_PATH.FORGOT_PASSWORD,
         icon: "fa-envelope-open-text"
       },

@@ -607,7 +607,7 @@ video {
 }
 
 .transition-full {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
@@ -708,10 +708,7 @@ button {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  --text-opacity: 1;
-  color: #fff;
-  color: rgba(255, 255, 255, var(--text-opacity));
+  padding-bottom: 0.5rem; --bg-opacity: 1; background-color: #a0aec0; background-color: rgba(160, 174, 192, var(--bg-opacity)); --text-opacity: 1; color: #fff; color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 button:active {
@@ -740,17 +737,111 @@ mark {
 
 label {
   font-weight: 700;
-  margin-bottom: 0.25rem
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+label.file {
+  position: relative;
+}
+
+label.file input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 input[type=text] {
+  width: 100%;
+  border-radius: 0.25rem;
   padding: 0.5rem;
   border-style: solid;
   border-width: 2px;
   --border-opacity: 1;
   border-color: #edf2f7;
   border-color: rgba(237, 242, 247, var(--border-opacity));
-  border-radius: 0.25rem
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+input[type=text]:focus {
+  padding-left: 1rem;
+}
+
+input[type=text].valid {
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #48bb78;
+  border-color: rgba(72, 187, 120, var(--border-opacity));
+  border-style: solid;
+  background-color: transparent;
+  --text-opacity: 1;
+  color: #48bb78;
+  color: rgba(72, 187, 120, var(--text-opacity));
+  background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 8 8\'%3e%3cpath fill=\'%2339DA8A\' d=\'M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z\'/%3e%3c/svg%3e');
+  padding-right: calc(1.4em + 1.269rem);
+  background-repeat: no-repeat;
+  background-position: center right calc(.35em + .235rem);
+  background-size: calc(.7em + .47rem) calc(.7em + .47rem);
+}
+
+input[type=text].invalid {
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #f56565;
+  border-color: rgba(245, 101, 101, var(--border-opacity));
+  border-style: solid;
+  background-color: transparent;
+  --text-opacity: 1;
+  color: #f56565;
+  color: rgba(245, 101, 101, var(--text-opacity));
+  padding-right: calc(1.4em + 1.269rem);
+  background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'%23FF5B5C\' viewBox=\'-2 -2 7 7\'%3e%3cpath stroke=\'%23FF5B5C\' d=\'M0 0l3 3m0-3L0 3\'/%3e%3ccircle r=\'.5\'/%3e%3ccircle cx=\'3\' r=\'.5\'/%3e%3ccircle cy=\'3\' r=\'.5\'/%3e%3ccircle cx=\'3\' cy=\'3\' r=\'.5\'/%3e%3c/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center right calc(.35em + .235rem);
+  background-size: calc(.7em + .47rem) calc(.7em + .47rem);
+}
+
+.left-icon {
+  position: relative;
+}
+
+.left-icon > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.left-icon > input[type=text] {
+  padding-left: 2.5rem;
+}
+
+.right-icon {
+  position: relative;
+}
+
+.right-icon > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.right-icon > input[type=text] {
+  padding-right: 2.5rem;
 }
 
 input[type=checkbox] {

@@ -2,7 +2,7 @@
 @tailwind components;
 
 .transition-full {
-  @apply transition ease-in-out duration-300;
+  @apply transition-all ease-in-out duration-300;
 }
 
 body {
@@ -42,7 +42,7 @@ grid { @apply grid grid-cols-12 gap-4; }
 
 
 button {
-  @apply rounded px-4 py-2 text-white;
+  @apply rounded px-4 py-2 secondary;
 }
 button:active {
   @apply opacity-75;
@@ -61,11 +61,58 @@ mark {
 }
 
 label {
-  @apply font-bold mb-1
+  @apply font-bold mb-1 text-sm;
+}
+
+label.file {
+  @apply relative;
+}
+label.file input[type=file] {
+  @apply absolute top-0 left-0 w-full h-full opacity-0;
 }
 
 input[type=text] {
-  @apply p-2 border-solid border-2 border-gray-200 rounded
+  @apply w-full rounded p-2 border-solid border-2 border-gray-200 transition-full;
+}
+input[type=text]:focus {
+  @apply pl-4;
+}
+
+input[type=text].valid {
+  @apply border-2 border-green-500 border-solid bg-transparent text-green-500;
+  background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 8 8\'%3e%3cpath fill=\'%2339DA8A\' d=\'M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z\'/%3e%3c/svg%3e');
+  padding-right: calc(1.4em + 1.269rem);
+  background-repeat: no-repeat;
+  background-position: center right calc(.35em + .235rem);
+  background-size: calc(.7em + .47rem) calc(.7em + .47rem);
+}
+input[type=text].invalid {
+  @apply border-2 border-red-500 border-solid bg-transparent text-red-500;
+  padding-right: calc(1.4em + 1.269rem);
+  background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'%23FF5B5C\' viewBox=\'-2 -2 7 7\'%3e%3cpath stroke=\'%23FF5B5C\' d=\'M0 0l3 3m0-3L0 3\'/%3e%3ccircle r=\'.5\'/%3e%3ccircle cx=\'3\' r=\'.5\'/%3e%3ccircle cy=\'3\' r=\'.5\'/%3e%3ccircle cx=\'3\' cy=\'3\' r=\'.5\'/%3e%3c/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center right calc(.35em + .235rem);
+  background-size: calc(.7em + .47rem) calc(.7em + .47rem);
+}
+
+.left-icon {
+  @apply relative;
+}
+.left-icon > i {
+  @apply absolute top-0 left-0 h-full flex items-center px-3;
+}
+.left-icon > input[type=text] {
+  @apply pl-10;
+}
+
+.right-icon {
+  @apply relative;
+}
+.right-icon > i {
+  @apply absolute top-0 right-0 h-full flex items-center px-3;
+}
+.right-icon > input[type=text] {
+  @apply pr-10;
 }
 
 input[type=checkbox] {

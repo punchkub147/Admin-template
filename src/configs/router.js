@@ -5,14 +5,20 @@ export const ROUTE_PATH = {
   WIDGETS: "/widgets",
 
   // APPLICATION
-  ECOMMERCE: "/application/ecommerce",
-  LOGISTIC: "/application/logistic",
+  APPLICATION: "/application",
+  APPLICATION_ECOMMERCE: "/application/ecommerce",
+  APPLICATION_LOGISTIC: "/application/logistic",
+
+  // FORM AND TABLE
+  FORM_AND_TABLE: "/form",
+  COMPONENT_INPUT: "/form/COMPONENT_INPUT",
 
   // COMPONENT
-  COMPONENT_TABLE: "/component_table",
-  COMPONENT_BUTTON: "/component_button",
-  COMPONENT_BREADCRUMB: "/component_breadcrumb",
-  COMPONENT_DROPDOWN: "/component_dropdown",
+  COMPONENT: "/component",
+  COMPONENT_TABLE: "/component/table",
+  COMPONENT_BUTTON: "/component/button",
+  COMPONENT_BREADCRUMB: "/component/breadcrumb",
+  COMPONENT_DROPDOWN: "/component/dropdown",
 
   // AUTHEN
   LOGIN: "/login",
