@@ -11,7 +11,7 @@ export const ROUTE_PATH = {
 
   // FORM AND TABLE
   FORM_AND_TABLE: "/form",
-  COMPONENT_INPUT: "/form/COMPONENT_INPUT",
+  COMPONENT_INPUT: "/form/input",
 
   // COMPONENT
   COMPONENT: "/component",
