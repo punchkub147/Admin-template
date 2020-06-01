@@ -1,4 +1,5 @@
 import React from "react";
+import Breadcrumb from "../../../components/Breadbrumb";
 
 const ComponentBreadcrumb = (props) => {
   const { pathname } = window.location
@@ -26,13 +27,8 @@ const ComponentBreadcrumb = (props) => {
             Auto generate breadcrumbs by location
           </p>
           <br />
-         
-          <nav className="breadcrumb">
-            <ol>
-              <li><a href="/"><i class="fas fa-home text-indigo-500"></i></a></li>
-              <li><a href={pathname}>{pathname.replace('/', '')}</a></li>
-            </ol>
-          </nav>
+          
+          <Breadcrumb/>
 
         </card>
       </grid>

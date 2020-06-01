@@ -15,13 +15,19 @@ import { ROUTE_PATH } from "../configs/router";
 import Ecommerce from "../containers/Applications/Ecommerce";
 import Logistic from "../containers/Applications/Logistic";
 
+import Invoice from '../containers/Applications/Invoice/index'
+import InvoiceList from '../containers/Applications/Invoice/List'
+import InvoiceEdit from '../containers/Applications/Invoice/Edit'
+import InvoiceAdd from '../containers/Applications/Invoice/Add'
+
 import ComponentTable from "../containers/Components/Table";
 import ComponentButton from "../containers/Components/Button";
 import ComponentBreadcrumb from "../containers/Components/Breadcrumb";
 import ComponentDropDown from "../containers/Components/Dropdown";
+import ComponentBadge from "../containers/Components/Badge";
 
 import FormAndTable from "../containers/FormAndTable";
-import Input from "../containers/FormAndTable/Input";
+import ComponentInput from "../containers/FormAndTable/Input";
 
 const RouteLayout = nest(
   Layout,
@@ -42,17 +48,23 @@ const AppRouter = () => {
         <RouteLayout exact path={ROUTE_PATH.APPLICATION} component={Ecommerce} />
         <RouteLayout exact path={ROUTE_PATH.APPLICATION_ECOMMERCE} component={Ecommerce} />
         <RouteLayout exact path={ROUTE_PATH.APPLICATION_LOGISTIC} component={Logistic} />
+        
+        <RouteLayout exact path={ROUTE_PATH.APPLICATION_INVOICE} component={Invoice} />
+        <RouteLayout exact path={ROUTE_PATH.APPLICATION_INVOICE_LIST} component={InvoiceList} />
+        <RouteLayout exact path={ROUTE_PATH.APPLICATION_INVOICE_EDIT} component={InvoiceEdit} />
+        <RouteLayout exact path={ROUTE_PATH.APPLICATION_INVOICE_ADD} component={InvoiceAdd} />
 
         {/* FORM AND TABLE */}
         <RouteLayout exact path={ROUTE_PATH.FORM_AND_TABLE} component={FormAndTable} />
-        <RouteLayout exact path={ROUTE_PATH.COMPONENT_INPUT} component={Input} />
+        <RouteLayout exact path={ROUTE_PATH.COMPONENT_INPUT} component={ComponentInput} />
+        <RouteLayout exact path={ROUTE_PATH.COMPONENT_TABLE} component={ComponentTable} />
 
         {/* COMPONENT */}
         <RouteLayout exact path={ROUTE_PATH.COMPONENT} component={ComponentTable} />
-        <RouteLayout exact path={ROUTE_PATH.COMPONENT_TABLE} component={ComponentTable} />
         <RouteLayout exact path={ROUTE_PATH.COMPONENT_BUTTON} component={ComponentButton} />
         <RouteLayout exact path={ROUTE_PATH.COMPONENT_BREADCRUMB} component={ComponentBreadcrumb} />
         <RouteLayout exact path={ROUTE_PATH.COMPONENT_DROPDOWN} component={ComponentDropDown} />
+        <RouteLayout exact path={ROUTE_PATH.COMPONENT_BADGE} component={ComponentBadge} />
 
         <Route exact path={ROUTE_PATH.LOGIN} component={Login} />
         <Route exact path={ROUTE_PATH.REGISTER} component={Register} />

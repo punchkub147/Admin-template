@@ -12,37 +12,37 @@ const ComponentDropDown = (props) => {
           <h6>Basic</h6>
           <br />
 
-          <Select className="w-40 mr-4">
+          <Select className="w-40">
             <option>default</option>
             <option>default 2</option>
             <option>default 3</option>
           </Select>
-          <Select className="w-40 mr-4 primary">
+          <Select className="w-40 primary">
             <option>primary</option>
             <option>primary 2</option>
             <option>primary 3</option>
           </Select>
-          <Select className="w-40 mr-4 secondary">
+          <Select className="w-40 secondary">
             <option>secondary</option>
             <option>secondary 2</option>
             <option>secondary 3</option>
           </Select>
-          <Select className="w-40 mr-4 success">
+          <Select className="w-40 success">
             <option>success</option>
             <option>success 2</option>
             <option>success 3</option>
           </Select>
-          <Select className="w-40 mr-4 info">
+          <Select className="w-40 info">
             <option>info</option>
             <option>info 2</option>
             <option>info 3</option>
           </Select>
-          <Select className="w-40 mr-4 warning">
+          <Select className="w-40 warning">
             <option>warning</option>
             <option>warning 2</option>
             <option>warning 3</option>
           </Select>
-          <Select className="w-40 mr-4 danger">
+          <Select className="w-40 danger">
             <option>danger</option>
             <option>danger 2</option>
             <option>danger 3</option>
@@ -52,37 +52,37 @@ const ComponentDropDown = (props) => {
           <h6>Outline</h6>
           <br />
 
-          <Select className="w-40 mr-4 outline">
+          <Select className="w-40 outline">
             <option>default</option>
             <option>default 2</option>
             <option>default 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline primary">
+          <Select className="w-40 outline primary">
             <option>primary</option>
             <option>primary 2</option>
             <option>primary 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline secondary">
+          <Select className="w-40 outline secondary">
             <option>secondary</option>
             <option>secondary 2</option>
             <option>secondary 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline success">
+          <Select className="w-40 outline success">
             <option>success</option>
             <option>success 2</option>
             <option>success 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline info">
+          <Select className="w-40 outline info">
             <option>info</option>
             <option>info 2</option>
             <option>info 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline warning">
+          <Select className="w-40 outline warning">
             <option>warning</option>
             <option>warning 2</option>
             <option>warning 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline danger">
+          <Select className="w-40 outline danger">
             <option>danger</option>
             <option>danger 2</option>
             <option>danger 3</option>
@@ -92,37 +92,37 @@ const ComponentDropDown = (props) => {
           <h6>Rounded</h6>
           <br />
 
-          <Select className="w-40 mr-4 outline rounded-full">
+          <Select className="w-40 outline rounded-full">
             <option>default</option>
             <option>default 2</option>
             <option>default 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline rounded-full primary">
+          <Select className="w-40 outline rounded-full primary">
             <option>primary</option>
             <option>primary 2</option>
             <option>primary 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline rounded-full secondary">
+          <Select className="w-40 outline rounded-full secondary">
             <option>secondary</option>
             <option>secondary 2</option>
             <option>secondary 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline rounded-full success">
+          <Select className="w-40 outline rounded-full success">
             <option>success</option>
             <option>success 2</option>
             <option>success 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline rounded-full info">
+          <Select className="w-40 outline rounded-full info">
             <option>info</option>
             <option>info 2</option>
             <option>info 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline rounded-full warning">
+          <Select className="w-40 outline rounded-full warning">
             <option>warning</option>
             <option>warning 2</option>
             <option>warning 3</option>
           </Select>
-          <Select className="w-40 mr-4 outline rounded-full danger">
+          <Select className="w-40 outline rounded-full danger">
             <option>danger</option>
             <option>danger 2</option>
             <option>danger 3</option>

@@ -703,7 +703,28 @@ grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-ga
 .outline.danger { border-width: 2px; --border-opacity: 1; border-color: #f56565; border-color: rgba(245, 101, 101, var(--border-opacity)); border-style: solid; background-color: transparent; --text-opacity: 1; color: #f56565; color: rgba(245, 101, 101, var(--text-opacity));
 }
 
+.light.primary { --bg-opacity: 1; background-color: #a3bffa; background-color: rgba(163, 191, 250, var(--bg-opacity)); --text-opacity: 1; color: #5a67d8; color: rgba(90, 103, 216, var(--text-opacity));
+}
+
+.light.secondary { --bg-opacity: 1; background-color: #e2e8f0; background-color: rgba(226, 232, 240, var(--bg-opacity)); --text-opacity: 1; color: #718096; color: rgba(113, 128, 150, var(--text-opacity));
+}
+
+.light.success { --bg-opacity: 1; background-color: #9ae6b4; background-color: rgba(154, 230, 180, var(--bg-opacity)); --text-opacity: 1; color: #38a169; color: rgba(56, 161, 105, var(--text-opacity));
+}
+
+.light.info { --bg-opacity: 1; background-color: #90cdf4; background-color: rgba(144, 205, 244, var(--bg-opacity)); --text-opacity: 1; color: #3182ce; color: rgba(49, 130, 206, var(--text-opacity));
+}
+
+.light.warning { --bg-opacity: 1; background-color: #fbd38d; background-color: rgba(251, 211, 141, var(--bg-opacity)); --text-opacity: 1; color: #dd6b20; color: rgba(221, 107, 32, var(--text-opacity));
+}
+
+.light.danger { --bg-opacity: 1; background-color: #feb2b2; background-color: rgba(254, 178, 178, var(--bg-opacity)); --text-opacity: 1; color: #e53e3e; color: rgba(229, 62, 62, var(--text-opacity));
+}
+
 button {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
   border-radius: 0.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -713,6 +734,27 @@ button {
 
 button:active {
   opacity: 0.75;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  --transform-translate-y: -0.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+button+button {
+  margin-left: 0.5rem;
 }
 
 i {
@@ -906,6 +948,20 @@ card {
   top: 2px;
 }
 
+.select-wrapper {
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.select-wrapper+.select-wrapper { margin-left: 0.5rem;
+}
+
 select {
   display: block;
   -webkit-appearance: none;
@@ -918,7 +974,8 @@ select {
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 2rem;
-  background-color: transparent
+  background-color: transparent;
+  outline: 0;
 }
 
 select:focus {
@@ -941,6 +998,23 @@ select:focus {
   font-size: 1.5rem;
   content: "\ea17";
   font-family: boxicons;
+}
+
+badge {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+badge+badge {
+  margin-left: 0.5rem;
+}
+
+bullet { display: inline-block; width: 0.25rem; height: 0.25rem; padding: 0.25rem; border-radius: 9999px;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

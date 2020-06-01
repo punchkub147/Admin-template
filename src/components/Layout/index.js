@@ -7,7 +7,7 @@ import Header from "../Header";
 import Breadcrumb from "../Breadbrumb";
 import Logo from "../../assets/images/logo.png";
 
-const enhance = compose(connect(state => ({ darkMode: state.darkMode })));
+const enhance = compose(connect((state) => ({ darkMode: state.darkMode })));
 
 const imageAvatar =
   "https://avatars0.githubusercontent.com/u/810438?s=460&u=4e652785fe5aa4aae075c40815741e8721f11fd5&v=4";
@@ -36,7 +36,9 @@ const AppLayout = ({ children, darkMode }) => {
         <div className="flex w-full flex-col">
           <Header />
           <div className="pt-16 pl-16">
-            <Breadcrumb/>
+            <div className="px-4 md:px-6 lg:px-8 py-2">
+              <Breadcrumb />
+            </div>
             <div className="p-4 md:p-6 lg:p-8 pt-0 md:pt-0 lg:pt-0 w-full min-h-screen">
               {children}
             </div>

@@ -14,12 +14,12 @@ const Table = ({ columns = [], dataSource = [], hideHeader = false }) => {
           </thead>
         )}
         <tbody>
-          {dataSource.map(data => (
-            <tr className="hover:bg-gray-200">
+          {dataSource.map((data, index) => (
+            <tr className="transition-full transform hover:-translate-y-1 hover:bg-gray-100 hover:shadow">
               {columns.map(column => (
                 <td className="text-base px-4 py-2">
                   {column.render
-                    ? column.render(data[column.key], data)
+                    ? column.render(data[column.key], data, index)
                     : data[column.key]}
                 </td>
               ))}

@@ -25,25 +25,52 @@ export const NAVBAR_CONFIG = [
       }
     ]
   },
+  // {
+  //   name: "Application",
+  //   path: ROUTE_PATH.APPLICATION,
+  //   icon: "fa-file",
+  //   nested: [
+  //     {
+  //       name: "Ecommerce",
+  //       path: ROUTE_PATH.APPLICATION_ECOMMERCE,
+  //       icon: "fa-store-alt"
+  //     },
+  //     {
+  //       name: "Logistic",
+  //       path: ROUTE_PATH.APPLICATION_LOGISTIC,
+  //       icon: "fa-shipping-fast"
+  //     }
+  //   ]
+  // },
   {
-    name: "Application",
+    name: "Invoice",
     path: ROUTE_PATH.APPLICATION,
     icon: "fa-file",
     nested: [
       {
-        name: "Ecommerce",
-        path: ROUTE_PATH.APPLICATION_ECOMMERCE,
+        name: "Invoice",
+        path: ROUTE_PATH.APPLICATION_INVOICE,
         icon: "fa-store-alt"
       },
       {
-        name: "Logistic",
-        path: ROUTE_PATH.APPLICATION_LOGISTIC,
-        icon: "fa-shipping-fast"
-      }
+        name: "Invoice List",
+        path: ROUTE_PATH.APPLICATION_INVOICE_LIST,
+        icon: "fa-store-alt"
+      },
+      {
+        name: "Invoice Edit",
+        path: ROUTE_PATH.APPLICATION_INVOICE_EDIT,
+        icon: "fa-store-alt"
+      },
+      {
+        name: "Invoice Add",
+        path: ROUTE_PATH.APPLICATION_INVOICE_ADD,
+        icon: "fa-store-alt"
+      },
     ]
   },
   {
-    name: "Application",
+    name: "Inputs & Tables",
     path: ROUTE_PATH.FORM_AND_TABLE,
     icon: "fa-file",
     nested: [
@@ -51,7 +78,12 @@ export const NAVBAR_CONFIG = [
         name: "Inputs",
         path: ROUTE_PATH.COMPONENT_INPUT,
         icon: "fa-store-alt"
-      }
+      },
+      {
+        name: "Table",
+        path: ROUTE_PATH.COMPONENT_TABLE,
+        icon: "fa-table"
+      },
     ]
   },
   {
@@ -59,11 +91,7 @@ export const NAVBAR_CONFIG = [
     path: ROUTE_PATH.COMPONENT,
     icon: "fa-toolbox",
     nested: [
-      {
-        name: "Table",
-        path: ROUTE_PATH.COMPONENT_TABLE,
-        icon: "fa-table"
-      },
+
       {
         name: "Buttons",
         path: ROUTE_PATH.COMPONENT_BUTTON,
@@ -78,7 +106,12 @@ export const NAVBAR_CONFIG = [
         name: "Dropdowns",
         path: ROUTE_PATH.COMPONENT_DROPDOWN,
         icon: "fa-arrow-right"
-      }
+      },
+      {
+        name: "Badges",
+        path: ROUTE_PATH.COMPONENT_BADGE,
+        icon: "fa-arrow-right"
+      },
     ]
   },
   {

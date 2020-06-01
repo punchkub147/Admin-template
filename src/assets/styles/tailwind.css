@@ -39,13 +39,28 @@ grid { @apply grid grid-cols-12 gap-4; }
 .outline.info { @apply border-2 border-blue-500 border-solid bg-transparent text-blue-500; }
 .outline.warning { @apply border-2 border-orange-400 border-solid bg-transparent text-orange-400; }
 .outline.danger { @apply border-2 border-red-500 border-solid bg-transparent text-red-500; }
+.light.primary { @apply bg-indigo-300 text-indigo-600; }
+.light.secondary { @apply bg-gray-300 text-gray-600; }
+.light.success { @apply bg-green-300 text-green-600; }
+.light.info { @apply bg-blue-300 text-blue-600; }
+.light.warning { @apply bg-orange-300 text-orange-600; }
+.light.danger { @apply bg-red-300 text-red-600; }
 
 
 button {
-  @apply rounded px-4 py-2 secondary;
+  @apply transition-full rounded px-4 py-2 secondary;
 }
 button:active {
   @apply opacity-75;
+}
+button:focus {
+  @apply outline-none;
+}
+button:hover {
+  @apply transform -translate-y-1 shadow-lg;
+}
+button+button {
+  @apply ml-2;
 }
 
 i {
@@ -153,8 +168,12 @@ card {
   top: 2px;
 }
 
+.select-wrapper {
+  @apply border-2 border-gray-200 inline-block relative cursor-pointer rounded;
+}
+.select-wrapper+.select-wrapper { @apply ml-2; }
 select {
-  @apply block appearance-none w-full rounded leading-tight py-2 pl-2 pr-8 bg-transparent
+  @apply block appearance-none w-full rounded leading-tight py-2 pl-2 pr-8 bg-transparent outline-none;
 }
 select:focus {
   @apply outline-none border-gray-200;
@@ -164,5 +183,14 @@ select:focus {
   content: "\ea17";
   font-family: boxicons;
 }
+
+badge {
+  @apply py-1 px-3 rounded text-xs uppercase;
+}
+badge+badge {
+  @apply ml-2;
+}
+
+bullet { @apply inline-block w-1 h-1 p-1 rounded-full; }
 
 @tailwind utilities;

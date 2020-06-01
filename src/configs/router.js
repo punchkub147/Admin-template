@@ -9,6 +9,11 @@ export const ROUTE_PATH = {
   APPLICATION_ECOMMERCE: "/application/ecommerce",
   APPLICATION_LOGISTIC: "/application/logistic",
 
+  APPLICATION_INVOICE: "/application/invoice",
+  APPLICATION_INVOICE_LIST: "/application/invoice/list",
+  APPLICATION_INVOICE_EDIT: "/application/invoice/edit",
+  APPLICATION_INVOICE_ADD: "/application/invoice/add",
+
   // FORM AND TABLE
   FORM_AND_TABLE: "/form",
   COMPONENT_INPUT: "/form/input",
@@ -19,6 +24,7 @@ export const ROUTE_PATH = {
   COMPONENT_BUTTON: "/component/button",
   COMPONENT_BREADCRUMB: "/component/breadcrumb",
   COMPONENT_DROPDOWN: "/component/dropdown",
+  COMPONENT_BADGE: "/component/badge",
 
   // AUTHEN
   LOGIN: "/login",
